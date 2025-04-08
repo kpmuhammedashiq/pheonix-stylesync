@@ -1,0 +1,13 @@
+package com.apparel.drycleaningservice.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DrycleaningserviceController {
+
+    @GetMapping("/ping")
+    public String ping() {
+        return "Drycleaningservice service is up";
+    }
+}
